@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <table class="table table-striped">
+        <tr>
+            <th>book_id</th>
+            <th>book_name</th>
+            <th>publisher_name</th>
+            <th>genre_type</th>
+            <th>price</th>
+            <th>publisher_email</th>
+        </tr>
+     <% for (var i=0; i<books.length;i++) { %>
+
+        <tr>
+
+            <td><%= books[i].id  %></td>
+            <td><%= books[i].book_name %></td>
+            <td><%= books[i].publisher_name %></td>
+            <td><%= books[i].genre_type %></td>
+            <td><%= books[i].price %></td>
+            <td><%= books[i].publisher_email %></td>
+        
+        </tr>
+
+     
+
+
+     <%          }                %>
+    </table>
+</body>
+</html>
